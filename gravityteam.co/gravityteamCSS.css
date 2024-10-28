@@ -350,7 +350,7 @@ p {
   flex-direction: column;
   align-items: center;
 }
-.block7 h1 {
+.text h1 {
   width: 719px;
   height: 78px;
   text-align: center;
@@ -358,7 +358,7 @@ p {
   margin: 0;
   margin-bottom: 20px;
 }
-.block7 p {
+.text p {
   width: 603.75px;
   height: 56px;
   text-align: center;
@@ -367,27 +367,132 @@ p {
   margin-bottom: 10px;
   line-height: 35px;
 }
+.heade {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headeGap {
+  gap: 25px;
+}
+
+button:hover {
+  box-shadow: 2px 2px 2px 2px rgb(137, 132, 132);
+}
+
+.cantextgiua {
+  text-align: center;
+  height: auto;
+  width: 62%;
+}
+.cantexttrai {
+}
+.P22 {
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 200;
+}
 .slide {
   width: 1056px;
   height: 709.39px;
   display: flex;
   flex-direction: column;
-  justify-content: start;
   align-items: center;
   margin-top: 50px;
+
+  position: relative;
 }
-.Div_buton {
+.dolon {
+  width: 58px;
   height: 58px;
-  width: 1056px;
+}
+.buton {
+  cursor: pointer;
+}
+.mo {
+  opacity: 40%;
+}
+.buton img {
+}
+.flex-center {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  margin-bottom: 50px;
+  align-items: center;
 }
-/* xử lí media */
-@media screen and (max-width: 414px) {
-  h1 {
-    font-size: 24px;
-    color: blue;
-  }
+.chuDay {
+  font-weight: bold;
+}
+.chuMong {
+  font-weight: 100;
+}
+.cuoiKhoi {
+  width: 95%;
+  height: 40px;
+  position: absolute;
+  z-index: 2;
+  top: 92%;
+}
+#select {
+  opacity: 1;
+}
+.nuaKhoi {
+  width: 50%;
+  height: 100%;
+}
+.flex-colunm-center {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0px;
+}
+.position_cha {
+  position: relative;
+}
+.position_con {
+  position: absolute;
+}
+.con_left_top {
+  top: -29px;
+  left: 0;
+}
+.anhdep img {
+  width: 500px;
+  height: 300px;
+}
+.P20 {
+  font-size: 20px;
+  line-height: 25px;
+}
+.muiten {
+  top: 79%;
+  right: 215px;
+}
+#nutcuoi {
+  width: 191.5px;
+  height: 58px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  background-image: url("button_before (1).png");
+  background-repeat: no-repeat;
+  user-select: none;
+}
+#block8 {
+  width: 100%;
+  height: 548px;
+}
+#block9 {
+  width: 100%;
+  height: 366.2px;
+
+  gap: 60px;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+#img1 {
+  width: 1056px;
 }
