@@ -1,6 +1,12 @@
 var slide = document.getElementsByClassName("slide");
 var div = document.getElementById("block2");
 var menu = document.getElementsByClassName("Menu");
+var subcategory = document.getElementsByName("subcategory");
+var Size = document.getElementsByName("Size");
+var color = document.getElementsByName("Color");
+var clear = document.getElementById("clear");
+var signin = document.getElementsByClassName("singin");
+
 for (let i = 0; i < menu.length; i++) {
   menu[i].onclick = function () {
     // đổi màu tất cả thành màu trắng
@@ -8,8 +14,28 @@ for (let i = 0; i < menu.length; i++) {
       menu[j].style.color = "white";
     }
     this.style.color = "red";
+    if (i == menu.length - 1) window.location.href = "ConsumersPage.html";
+    if (i == 4) {
+      sessionStorage.setItem("isLoggedIn", "false");
+      window.location.href = "homePage.html";
+    }
   };
 }
+
+window.onload = function () {
+  const isLoggedIn = sessionStorage.getItem("isLoggedIn");
+
+  if (isLoggedIn === "true") {
+    for (let i = 0; i < menu.length; i++) {
+      menu[i].style.display = "none"; // Ẩn phần tử menu
+    }
+    for (let j = 0; j < signin.length; j++) {
+      signin[j].style.fontSize = "12px";
+      signin[j].style.display = "block"; // Hiển thị phần tử signin.
+    }
+    document.getElementById("giohang").style.display = "flex";
+  }
+};
 
 for (let i = 0; i < slide.length; i++) {
   slide[i].onclick = function () {
@@ -39,3 +65,38 @@ function conten(number) {
   }
   slideimg.style.animation = "slide-in 1s forwards";
 }
+
+// phần check loign
+var Name = document.getElementById("Name");
+var Passwork = document.getElementById("Password");
+var btnLogin = document.getElementById("btnLogin");
+btnLogin.onmousedown = function () {
+  // Kiểm tra xem có bỏ trống cái nào không
+  if (Name.value.trim() === "" || Passwork.value.trim() === "") {
+    if (Name.value.trim() === "") {
+      Name.style.border = "2px solid red";
+      Name.focus();
+    } else {
+      Name.style.border = "";
+    }
+
+    if (Passwork.value.trim() === "") {
+      Passwork.style.border = "2px solid red";
+      Passwork.focus();
+    } else {
+      Passwork.style.border = "";
+    }
+  } else {
+    sessionStorage.setItem("isLoggedIn", "true");
+    window.location.href = "homePage.html";
+  }
+};
+
+// // Hàm đăng xuất
+// function logout() {
+//   sessionStorage.removeItem("isLoggedIn");
+//   window.location.href = "login.html"; // Chuyển về trang đăng nhập
+// }
+// document.getElementById("Logo").onclick = function () {
+//   window.location.href = "homePage.html";
+// };

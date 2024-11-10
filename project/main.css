@@ -22,7 +22,7 @@
   align-items: center;
 }
 #menu {
-  width: 378px;
+  width: 398px;
   height: 25px;
 }
 #input {
@@ -295,8 +295,6 @@ li {
   width: 763px;
   height: 45px;
   border-radius: 5px;
-  border: none;
-  border: 1px solid rgb(179, 176, 176);
 }
 #btnLogin {
   width: 100%;
@@ -335,4 +333,75 @@ li {
 }
 input {
   font-size: 20px;
+}
+#Name {
+}
+#dangnhap {
+  color: aqua;
+}
+#inforProduct {
+  width: 750px;
+  height: 500px;
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  background-color: rgb(29, 52, 73);
+  display: none;
+}
+#inforProduct img {
+  width: 100%;
+  height: 100%;
+}
+#giohang {
+  width: 100%;
+  height: 63px;
+  display: none;
+}
+#giohang button {
+  background-color: rgba(227, 29, 39, 1);
+  width: 122px;
+  height: 40px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+#giohang p {
+  font-weight: 800;
+  cursor: pointer;
+}
+#danhmuc p {
+  text-align: start;
+}
+#danhmuc {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%; /* Hai cột với chiều rộng lần lượt là 100px và 200px */
+  /* Hai hàng với chiều cao 150px */
+  justify-content: center;
+  gap: 2%;
+  height: 543px;
+  width: 100%;
+}
+#sanphamdanhmuc {
+  height: 450px;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+#sanphamdanhmuc p {
+  margin: 0px;
+  width: 174px;
+  text-align: center;
+}
+.hinhanhsp {
+  display: grid;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 900;
 }
