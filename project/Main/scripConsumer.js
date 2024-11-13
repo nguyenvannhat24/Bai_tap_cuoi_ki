@@ -16,6 +16,7 @@ for (let i = 0; i < menu.length; i++) {
     }
     this.style.color = "red";
     if (i == 3) window.location.href = "login.html";
+    if (i == 0) window.location.href = "openMenu.html";
   };
 }
 document.getElementById("Logo").onclick = function () {
@@ -58,4 +59,7 @@ for (let i = 0; i < signIn.length; i++) {
   signIn[i].onclick = function () {
     window.location.href = "login.html";
   };
+}
+function product() {
+  window.location.href = "openMenu.html";
 }

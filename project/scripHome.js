@@ -19,6 +19,7 @@ for (let i = 0; i < menu.length; i++) {
       sessionStorage.setItem("isLoggedIn", "false");
       window.location.href = "homePage.html";
     }
+    if (i == 0) window.location.href = "openMenu.html";
   };
 }
 
@@ -65,6 +66,29 @@ function conten(number) {
   }
   slideimg.style.animation = "slide-in 1s forwards";
 }
+// phần thêm giỏ hàng
+function addCart() {
+  var quantity = document.getElementsByClassName("quantity");
+  var mycart = document.getElementById("mycart");
+  var soluong = 0;
+  for (let i = 0; i < quantity.length; i++) {
+    soluong = soluong + parseInt(quantity[i].value, 10);
+  }
+  console.log(soluong);
+  mycart.textContent = "Tổng số lượng: (" + soluong + ")";
+}
+
+function xoa() {
+  var subcategory = document.getElementsByName("subcategory");
+  var Size = document.getElementsByName("Size");
+  var color = document.getElementsByName("Color");
+  var clear = document.getElementById("clear");
+  clear.onclick = function () {
+    color.forEach((radio) => (radio.checked = false));
+    Size.forEach((radio) => (radio.checked = false));
+    subcategory.forEach((radio) => (radio.checked = false));
+  };
+}
 
 // phần check loign
 var Name = document.getElementById("Name");
@@ -91,7 +115,12 @@ btnLogin.onmousedown = function () {
     window.location.href = "homePage.html";
   }
 };
-
+function returnHome() {
+  window.location.href = "homePage.html";
+}
+function maskets() {
+  window.location.href = "Product-icon.html";
+}
 // // Hàm đăng xuất
 // function logout() {
 //   sessionStorage.removeItem("isLoggedIn");
@@ -100,3 +129,6 @@ btnLogin.onmousedown = function () {
 // document.getElementById("Logo").onclick = function () {
 //   window.location.href = "homePage.html";
 // };
+function product() {
+  window.location.href = "openMenu.html";
+}
