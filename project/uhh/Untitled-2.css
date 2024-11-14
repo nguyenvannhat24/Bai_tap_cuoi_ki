@@ -1,0 +1,1064 @@
+.ellipse12-container, .ellipse13-container {
+    width: 50px;  /* Đặt kích thước cố định cho các phần tử */
+    height: 50px; 
+    display: inline-block;  /* Đảm bảo các phần tử được hiển thị ngang hàng */
+}
+
+.ellipse12, .ellipse13 {
+    width: 100%;  /* Chiều rộng của hình ảnh chiếm hết container */
+    height: 100%;  /* Chiều cao của hình ảnh chiếm hết container */
+    cursor: pointer;  /* Thêm con trỏ chuột khi người dùng hover */
+    pointer-events: all;  /* Đảm bảo các sự kiện chuột được nhận */
+}
+
+.ellipse12.selected {
+    border: 3px solid #FF5733;  /* Màu viền khi ellipse12 được chọn */
+}
+
+.ellipse13.selected {
+    border: 3px solid #FF5733;  /* Màu viền khi ellipse13 được chọn */
+}
+
+
+.btn {
+    cursor: pointer; 
+    transition: text-decoration 0.3s ease;
+}
+
+.btn:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    display: flex; 
+    align-items: center; 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px; 
+    padding: 5px 10px; 
+    width: 300px; 
+    transition: all 0.3s ease;
+}
+
+
+.search-input {
+    width: 100%;
+    padding: 5px 10px; 
+    border: none; 
+    outline: none; 
+    font-size: 14px; 
+    border-radius: 20px;
+}
+
+
+.search-btn {
+    background: none; 
+    border: none;
+    cursor: pointer;
+    margin-left: 10px; 
+}
+
+
+.search-btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.search-bar:hover {
+    border-color: #007bff;
+}
+
+/* Điều chỉnh kích thước của rec63 */
+.rec63 {
+    width: 500px; /* Điều chỉnh theo kích thước của Rectangle 63 */
+    height: 100px; /* Điều chỉnh theo kích thước của Rectangle 63 */
+    position: relative;
+}
+
+/* Ô nhập liệu trong rec63 */
+.input-rec63 {
+    width: 100%; /* Chiều rộng 100% của div cha (rec63) */
+    height: 100%; /* Chiều cao 100% của div cha */
+    padding: 10px;
+    border: none;
+    background-image: url('Rectangle 63.png'); /* Sử dụng hình ảnh làm nền */
+    background-size: cover; /* Đảm bảo hình ảnh phủ đầy ô */
+    color: rgb(0, 0, 0); /* Màu chữ */
+    font-size: 16px;
+    font-weight: bold;
+    box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến kích thước */
+}
+
+/* Màu chữ của placeholder */
+.input-rec63::placeholder {
+    color: white;
+}
+
+.rec40 {
+    width: 500px; /* Kích thước chiều rộng của Rectangle 40 */
+    height: 100px; /* Kích thước chiều cao của Rectangle 40 */
+    position: relative;
+}
+
+/* Điều chỉnh kích thước của input-rec40 sao cho giống với kích thước của hình ảnh */
+.input-rec40 {
+    width: 100%; /* Chiều rộng 100% của div cha */
+    height: 100%; /* Chiều cao 100% của div cha */
+    padding: 10px;
+    border: none;
+    background-image: url('Rectangle 40.png'); /* Nền là hình ảnh */
+    background-size: cover; /* Đảm bảo hình ảnh phủ đầy */
+    color: rgb(0, 0, 0); /* Màu chữ */
+    font-size: 16px;
+    box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến kích thước tổng thể */
+    z-index: 10;
+}
+
+/* Màu chữ cho placeholder */
+.input-rec40::placeholder {
+    color: white; /* Màu placeholder */
+}
+
+
+.rec38 {
+    width: 500px; /* Điều chỉnh chiều rộng của Rectangle 38 */
+    height: 50px; /* Điều chỉnh chiều cao của Rectangle 38 */
+    position: relative;
+    background-image: url('Rectangle 38.png'); /* Thêm hình ảnh nền nếu cần */
+    background-size: cover; /* Đảm bảo hình ảnh phủ đầy */
+    border-radius: 5px; /* Thêm border-radius để bo góc */
+    display: flex;
+    align-items: center; /* Căn giữa nội dung dọc */
+    justify-content: space-between; /* Khoảng cách giữa các phần tử */
+    padding: 0 10px; /* Thêm khoảng cách giữa văn bản và cạnh */
+}
+
+/* Thiết kế dropdown (select) */
+.payment-method {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color: transparent; /* Làm nền trong suốt */
+    border: none;
+    color: rgb(0, 0, 0); /* Màu chữ trắng */
+    font-weight: bold;
+    box-sizing: border-box;
+    appearance: none; /* Tắt kiểu mặc định của trình duyệt */
+    background-image: url('arrow 2.png'); /* Thêm mũi tên bên phải */
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20px; /* Kích thước mũi tên */
+}
+
+/* Tùy chỉnh giao diện khi dropdown được chọn */
+.payment-method:focus {
+    outline: none; /* Tắt viền khi chọn */
+}
+
+.rec64 {
+    width: 500px; /* Điều chỉnh theo kích thước của Rectangle 64 */
+    height: 50px; /* Điều chỉnh theo kích thước của Rectangle 64 */
+    position: relative;
+    background-image: url('Rectangle 64.png'); /* Đặt hình nền cho phần tử */
+    background-size: cover; /* Đảm bảo hình ảnh phủ đầy */
+    border-radius: 5px; /* Bo góc cho đẹp */
+    display: flex;
+    justify-content: center; /* Căn giữa */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 0 10px; /* Thêm khoảng cách giữa ô và các cạnh */
+}
+
+/* Điều chỉnh giao diện của input type date */
+.date-picker {
+    width: 100%; /* Chiếm toàn bộ chiều rộng của phần tử cha */
+    height: 100%; /* Chiếm toàn bộ chiều cao của phần tử cha */
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color: transparent; /* Nền trong suốt */
+    border: none; /* Loại bỏ viền mặc định */
+    font-weight: bold;
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước */
+}
+
+/* Tùy chỉnh giao diện khi input được chọn */
+.date-picker:focus {
+    outline: none; /* Tắt viền khi chọn */
+}
+
+
+/* Điều chỉnh kích thước của rec67 */
+.rec67 {
+    width: 200px; /* Kích thước của Rectangle 67 */
+    height: 50px; /* Chiều cao của ô nhập liệu */
+    position: relative;
+    background-image: url('Rectangle 67.png'); /* Đặt hình nền cho phần tử */
+    background-size: cover; /* Đảm bảo hình ảnh phủ đầy */
+    border-radius: 5px; /* Bo góc cho đẹp */
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 0; /* Loại bỏ khoảng cách padding mặc định */
+}
+
+/* Giao diện cho input CVV */
+.cvv-input {
+    width: 100%; /* Chiếm toàn bộ chiều rộng của phần tử cha (rec67) */
+    height: 100%; /* Chiếm toàn bộ chiều cao của phần tử cha */
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color: transparent; /* Nền trong suốt */
+    border: none; /* Loại bỏ viền mặc định */
+    font-weight: bold;
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước */
+    text-align: center; /* Căn giữa văn bản trong ô nhập liệu */
+}
+
+/* Thông báo lỗi */
+.cvv-error {
+    position: absolute;
+    top: 100%; /* Đặt thông báo dưới ô nhập liệu */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: red;
+    margin-top: 5px;
+}
+
+button {
+    cursor: pointer; /* Đổi con trỏ thành hình bàn tay khi hover */
+    border: none; /* Không viền cho button */
+    background: none; /* Không có nền cho button */
+    padding: 0; /* Không có padding cho button */
+    display: inline-block; /* Đảm bảo button hiển thị cùng nhau */
+    width: 100%; /* Đảm bảo button chiếm toàn bộ không gian của phần tử chứa */
+    height: auto; /* Giữ tỷ lệ hình ảnh không bị méo */
+}
+
+/* Hiệu ứng hover cho các button */
+.rec60 button, .rec61 button, .rec22 button, .group52 button {
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Thêm hiệu ứng chuyển màu nền và phóng to */
+}
+
+/* Thêm hiệu ứng khi hover */
+.rec60:hover button, .rec61:hover button, .rec22:hover button, .group52:hover button {
+    background-color: #f0f0f0; /* Thay đổi màu nền khi hover */
+    transform: scale(1.1); /* Phóng to nút khi hover */
+}
+
+/* Đảm bảo ảnh trong các button không bị lệch */
+.rec60 img, .rec61 img, .rec22 img, .group52 img {
+    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ không gian của button */
+    height: auto; /* Giữ tỷ lệ hình ảnh */
+}
+
+
+.rec1{
+/* Rectangle 1 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #ffffff;
+}
+
+
+.logo1{
+/* logo 1 */
+
+position: absolute;
+left: 3.4%;
+right: 72.71%;
+top: 2%;
+bottom: 11.43%;
+
+background: url(logo.png);
+}
+
+.product{
+
+position: absolute;
+left: 59.04%;
+right: 4.21%;
+top: 3.1%;
+bottom: 38.1%;
+
+font-family: 'Open Sans Condensed';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 25px;
+/* identical to box height */
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+.toolbox{
+    position: absolute;
+left: 67.04%;
+right: 4.21%;
+top: 3.1%;
+bottom: 38.1%;
+
+font-family: 'Open Sans Condensed';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 25px;
+/* identical to box height */
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+.myacc{
+    position: absolute;
+left: 74.04%;
+right: 4.21%;
+top: 3.1%;
+bottom: 38.1%;
+
+font-family: 'Open Sans Condensed';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 25px;
+/* identical to box height */
+text-transform: uppercase;
+
+color: #ff0000;
+}
+
+.contact{
+    position: absolute;
+left: 83.04%;
+right: 4.21%;
+top: 3.1%;
+bottom: 38.1%;
+
+font-family: 'Open Sans Condensed';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 25px;
+/* identical to box height */
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+.logout{
+position: absolute;
+left: 90.04%;
+right: 4.21%;
+top: 3.1%;
+bottom: 38.1%;
+
+font-family: 'Open Sans Condensed';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 25px;
+/* identical to box height */
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+.rec24{
+/* Rectangle 24 */
+
+position: absolute;
+left: 29.99%;
+right: 39.24%;
+top: 5%;
+bottom: 34.29%;
+border-radius: 100px;
+}
+
+.group1{
+/* Group */
+
+position: absolute;
+left: 55.54%;
+right: 40.42%;
+top: 6%;
+bottom: 42.86%;
+}
+
+.search{
+/* Search... */
+
+position: absolute;
+left: 31.65%;
+right: 61.19%;
+top: 4%;
+bottom: 41.9%;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #BDBDBD;
+}
+
+.rec24{
+    /* Rectangle 24 */
+    
+    position: absolute;
+    left: 29.99%;
+    right: 39.24%;
+    top: 5%;
+    bottom: 34.29%;
+    border-radius: 100px;
+    }
+    
+    .group1{
+    /* Group */
+    
+    position: absolute;
+    left: 55.54%;
+    right: 40.42%;
+    top: 6%;
+    bottom: 42.86%;
+    }
+    
+    .search{
+    /* Search... */
+    
+    position: absolute;
+    left: 31.65%;
+    right: 61.19%;
+    top: 4%;
+    bottom: 41.9%;
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    color: #BDBDBD;
+    }
+
+.checkout{
+/* Check Out */
+
+position: absolute;
+width: 97px;
+height: 27px;
+left: 72px;
+top: 135px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+
+color: #E31D27;
+}
+
+.rec32{
+/* Rectangle 32 */
+
+position: absolute;
+width: 645px;
+height: 50px;
+left: 64px;
+top: 186px;
+
+background: #FFF6F6;
+border-radius: 5px;
+}
+
+.shipping{
+/* Shipping Address */
+
+position: absolute;
+width: 178px;
+height: 27px;
+left: 84px;
+top: 177px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 27px;
+
+color: #020202;
+}
+
+.rec66{
+/* Rectangle 66 */
+
+position: absolute;
+width: 645px;
+height: 50px;
+left: 733px;
+top: 186px;
+
+background: #FFF6F6;
+border-radius: 5px;
+}
+
+.payment{
+/* Payment */
+
+position: absolute;
+width: 93px;
+height: 27px;
+left: 755px;
+top: 197px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 27px;
+
+color: #020202;
+}
+
+.ellipse12{
+/* Ellipse 12 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 22px;
+height: 22px;
+left: 80px;
+top: 295px;
+
+border: 1px solid #000000;
+}
+
+.ellipse13{
+/* Ellipse 13 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 22px;
+height: 22px;
+left: 80px;
+top: 397px;
+
+border: 1px solid #000000;
+}
+
+
+
+.company, .email {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000; /* Changed to black for non-label text */
+}
+
+.company {
+    position: absolute;
+    width: 300px;
+    height: 81px;
+    left: 100px;
+    top: 266px;
+}
+
+.email {
+    position: absolute;
+    width: 500px;
+    height: 81px;
+    left: 337px;
+    top: 266px;
+}
+
+.label {
+    color: #E31D27; /* Red color for labels */
+    font-weight: 700; /* Making labels bold for emphasis */
+}
+
+/* Ensure pre tags don't affect the styling */
+.company pre, .email pre {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    white-space: pre-wrap; /* To ensure long lines wrap */
+}
+
+.company2, .email2 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000; /* Changed to black for non-label text */
+}
+
+.company2 {
+    position: absolute;
+    width: 300px;
+    height: 81px;
+    left: 100px;
+    top: 368px;
+}
+
+.email2 {
+    position: absolute;
+    width: 500px;
+    height: 81px;
+    left: 337px;
+    top: 368px;
+}
+
+.label {
+    color: #E31D27; /* Red color for labels */
+    font-weight: 700; /* Making labels bold for emphasis */
+}
+
+/* Ensure pre tags don't affect the styling */
+.company2 pre, .email2 pre {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    white-space: pre-wrap; /* To ensure long lines wrap */
+}
+
+.smol{
+/* If paying by credit card, please enter the information below, otherwise press Proceed. */
+
+position: absolute;
+width: 815px;
+height: 20px;
+left: 733px;
+top: 251px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+
+color: #000000;
+}
+
+.payment{
+/* Payment Method */
+
+position: absolute;
+width: 161px;
+height: 27px;
+left: 733px;
+top: 421px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+
+color: #000000;
+}
+
+.expirydate{
+/* Expiry Date */
+
+position: absolute;
+width: 107px;
+height: 27px;
+left: 733px;
+top: 485px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+
+color: #000000;
+}
+
+.cvvnumber{
+/* CVV Number */
+
+position: absolute;
+width: 120px;
+height: 27px;
+left: 733px;
+top: 547px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+
+color: #000000;
+}
+
+.rec63{
+/* Rectangle 63 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 455px;
+height: 45px;
+left: 923px;
+top: 305px;
+
+border: 0.5px solid #717171;
+border-radius: 5px;
+}
+
+.rec64{
+/* Rectangle 64 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 220px;
+height: 45px;
+left: 923px;
+top: 496px;
+
+border: 0.5px solid #717171;
+border-radius: 5px;
+}
+
+.rec67{
+/* Rectangle 67 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 218px;
+height: 45px;
+left: 923px;
+top: 558px;
+
+border: 0.5px solid #717171;
+border-radius: 5px;
+}
+
+.rec65{
+/* Rectangle 65 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 218px;
+height: 45px;
+left: 1160px;
+top: 496px;
+
+border: 0.5px solid #717171;
+border-radius: 5px;
+}
+
+.select{
+/* Select Payment Method */
+
+position: absolute;
+width: 166px;
+height: 20px;
+left: 934px;
+top: 429px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+
+color: #000000;
+}
+
+.jan{
+/* January 1 */
+
+position: absolute;
+width: 66px;
+height: 20px;
+left: 934px;
+top: 495px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+
+color: #000000;
+}
+
+.n2023{
+/* 2023 */
+
+position: absolute;
+width: 35px;
+height: 20px;
+left: 1168px;
+top: 495px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+
+color: #000000;
+}
+
+.arrow2{
+/* arrow 2 */
+
+position: absolute;
+width: 29px;
+height: 29px;
+left: 1342px;
+top: 440px;
+}
+
+.arrow3{
+/* arrow 3 */
+
+position: absolute;
+width: 29px;
+height: 29px;
+left: 1105px;
+top: 505px;
+}
+
+.arrow4{
+/* arrow 4 */
+
+position: absolute;
+width: 29px;
+height: 29px;
+left: 1345px;
+top: 505px;
+}
+
+.cardholder{
+/* Card Holder's Name */
+
+position: absolute;
+width: 127px;
+height: 54px;
+left: 733px;
+top: 287px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+
+color: #000000;
+}
+
+.cardnumber{
+/* Card Number */
+
+position: absolute;
+width: 127px;
+height: 27px;
+left: 733px;
+top: 364px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+
+color: #000000;
+}
+
+.rec38{
+/* Rectangle 38 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 455px;
+height: 45px;
+left: 923px;
+top: 433px;
+
+border: 0.5px solid #717171;
+border-radius: 5px;
+}
+
+.rec40{
+/* Rectangle 40 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 455px;
+height: 45px;
+left: 923px;
+top: 369px;
+
+border: 0.5px solid #717171;
+border-radius: 5px;
+}
+
+.mark{
+/* Mark Lorem */
+
+position: absolute;
+width: 300px;
+left: 64.84%;
+right: 29.49%;
+top: 42.05%;
+bottom: 60.16%;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 19px;
+line-height: 20px;
+
+color: #000000;
+}
+
+.rec60{
+/* Rectangle 60 */
+
+position: absolute;
+width: 165px;
+height: 30px;
+left: 544px;
+top: 615px;
+
+background: #D9D9D9;
+border-radius: 5px;
+}
+
+.rec61{
+/* Rectangle 61 */
+
+position: absolute;
+width: 53px;
+height: 30px;
+left: 476px;
+top: 615px;
+
+background: #D9D9D9;
+border-radius: 5px;
+}
+
+.addnew{
+/* ADD NEW ADDRESS */
+
+position: absolute;
+width: 300px;
+height: 19px;
+left: 390px;
+top: 608px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+text-align: right;
+text-transform: uppercase;
+
+color: #000000;
+}
+
+.edit{
+/* eDIT */
+
+position: absolute;
+width: 30px;
+height: 19px;
+left: 487px;
+top: 608px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+text-align: center;
+text-transform: uppercase;
+
+color: #000000;
+}
+
+.rec22{
+/* Rectangle 22 */
+
+position: absolute;
+width: 136px;
+height: 30px;
+left: 1121px;
+top: 615px;
+
+background: #D9D9D9;
+border-radius: 5px;
+}
+
+.back{
+/* Back to cart */
+
+position: absolute;
+width: 300px;
+height: 19px;
+left: 940px;
+top: 608px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+text-align: right;
+text-transform: uppercase;
+
+color: #000000;
+}
+
+.group52{
+/* Group 52 */
+
+position: absolute;
+width: 104px;
+height: 30px;
+left: 1276px;
+top: 615px;
+}
+
+.group26{
+/* Group 26 */
+
+position: absolute;
+width: 1442px;
+height: 107px;
+left: 0px;
+top: 712px;
+}

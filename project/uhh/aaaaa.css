@@ -1,0 +1,559 @@
+.btn {
+    cursor: pointer; 
+    transition: text-decoration 0.3s ease;
+}
+
+.btn:hover {
+    text-decoration: underline;
+}
+
+.group52, .group53 {
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+
+.group52:hover, .group53:hover {
+    background-color: #f0f0f0; 
+    transform: scale(1.1); 
+}
+
+.rec61, .rec60, .rec22 {
+    cursor: pointer; 
+    transition: transform 0.2s ease;
+    transform-origin: center; 
+}
+
+
+.rec61:hover, .rec60:hover, .rec22:hover {
+    transform: scale(1.1);
+}
+.rec61 img, .rec60 img, .rec22 img {
+    display: block; 
+    width: 100%; 
+}
+
+
+.search-bar {
+    display: flex; 
+    align-items: center; 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px; 
+    padding: 5px 10px; 
+    width: 300px; 
+    transition: all 0.3s ease;
+}
+
+
+.search-input {
+    width: 100%;
+    padding: 5px 10px; 
+    border: none; 
+    outline: none; 
+    font-size: 14px; 
+    border-radius: 20px;
+}
+
+
+.search-btn {
+    background: none; 
+    border: none;
+    cursor: pointer;
+    margin-left: 10px; 
+}
+
+
+.search-btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.search-bar:hover {
+    border-color: #007bff;
+}
+.rec63 {
+    position: relative; /* Đảm bảo có thể đặt các phần tử con vào đúng vị trí */
+}
+
+.text-input {
+    position: absolute; /* Đặt ô nhập liệu lên trên hình ảnh */
+    top: 50%; /* Căn giữa theo chiều dọc */
+    left: 50%; /* Căn giữa theo chiều ngang */
+    transform: translate(-50%, -50%); /* Căn chính xác vào giữa */
+    background-color: transparent; /* Giữ nền trong suốt */
+    border: none; /* Bỏ viền */
+    font-size: 16px; /* Kích thước chữ */
+    color: black; /* Màu chữ */
+    padding: 5px 10px; /* Khoảng cách giữa chữ và viền ô nhập */
+    width: 100%; /* Chiều rộng của ô nhập liệu */
+}
+
+.text-input::placeholder {
+    color: #888; /* Màu của placeholder */
+}
+
+
+
+
+
+.rec1{
+/* Rectangle 1 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #ffffff;
+}
+
+
+.logo1{
+/* logo 1 */
+
+position: absolute;
+left: 3.4%;
+right: 72.71%;
+top: 2%;
+bottom: 11.43%;
+
+background: url(logo.png);
+}
+
+.product{
+
+position: absolute;
+left: 59.04%;
+right: 4.21%;
+top: 3.1%;
+bottom: 38.1%;
+
+font-family: 'Open Sans Condensed';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 25px;
+/* identical to box height */
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+.toolbox{
+    position: absolute;
+left: 67.04%;
+right: 4.21%;
+top: 3.1%;
+bottom: 38.1%;
+
+font-family: 'Open Sans Condensed';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 25px;
+/* identical to box height */
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+.myacc{
+    position: absolute;
+left: 74.04%;
+right: 4.21%;
+top: 3.1%;
+bottom: 38.1%;
+
+font-family: 'Open Sans Condensed';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 25px;
+/* identical to box height */
+text-transform: uppercase;
+
+color: #ff0000;
+}
+
+.contact{
+    position: absolute;
+left: 83.04%;
+right: 4.21%;
+top: 3.1%;
+bottom: 38.1%;
+
+font-family: 'Open Sans Condensed';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 25px;
+/* identical to box height */
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+.logout{
+position: absolute;
+left: 90.04%;
+right: 4.21%;
+top: 3.1%;
+bottom: 38.1%;
+
+font-family: 'Open Sans Condensed';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 25px;
+/* identical to box height */
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+
+.mycart{
+/* My Cart */
+
+position: absolute;
+width: 73px;
+height: 27px;
+left: 72px;
+top: 135px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+
+color: #E31D27;
+}
+
+.rec24{
+/* Rectangle 24 */
+
+position: absolute;
+left: 29.99%;
+right: 39.24%;
+top: 5%;
+bottom: 34.29%;
+border-radius: 100px;
+}
+
+.group1{
+/* Group */
+
+position: absolute;
+left: 55.54%;
+right: 40.42%;
+top: 6%;
+bottom: 42.86%;
+}
+
+.search{
+/* Search... */
+
+position: absolute;
+left: 31.65%;
+right: 61.19%;
+top: 4%;
+bottom: 41.9%;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+color: #BDBDBD;
+}
+
+
+.line1{
+/* Ref# Name Qty PK Price Ext Price */
+
+position: absolute;
+width: 1198px;
+height: 27px;
+left: 84px;
+top: 180px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+z-index: 2; 
+color: #020202;
+}
+
+.rec58{
+/* Rectangle 58 */
+position: absolute;
+width: 1315px;
+height: 50px;
+left: 64px;
+top: 187px;
+background: #FFF6F6;
+border-radius: 5px;
+background-image: url("Rectangle 58.png");
+z-index: 1;
+}
+.rec50{
+
+/* Rectangle 50 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 55px;
+height: 45px;
+left: 705px;
+top: 279px;
+
+background: #F0F0F0;
+border: 0.5px solid #717171;
+border-radius: 5px;
+}
+
+.rec62{
+/* Rectangle 62 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 55px;
+height: 45px;
+left: 705px;
+top: 353px;
+
+background: #F0F0F0;
+border: 0.5px solid #717171;
+border-radius: 5px;
+}
+
+.group6{
+/* Group 6 */
+
+position: absolute;
+width: 80px;
+height: 65.25px;
+left: 72px;
+top: 260px;
+}
+
+.group54{
+/* Group 54 */
+
+position: absolute;
+width: 80px;
+height: 65.25px;
+left: 72px;
+top: 340px;
+}
+
+.cart1{
+/* 103303 Lowrider Twisted Antenna Chrome 2 ea $19.95 $39.90 Remove */
+
+position: absolute;
+width: 1276px;
+height: 25px;
+left: 84px;
+top: 270px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+
+color: #E31D27;
+}
+
+.cart2{
+/* 103303 Lowrider Twisted Antenna Chrome 1 ea $19.95 $39.90 Remove */
+
+position: absolute;
+width: 1276px;
+height: 25px;
+left: 84px;
+top: 344px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+
+color: #E31D27;
+}
+
+.total{
+/* Total: $70.90 */
+
+position: absolute;
+width: 137px;
+height: 27px;
+left: 1194px;
+top: 402px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+z-index: 2;
+color: #020202;
+}
+
+.rec22{
+/* Rectangle 22 */
+
+position: absolute;
+width: 136px;
+height: 30px;
+left: 1031px;
+top: 488px;
+
+background: #D9D9D9;
+border-radius: 5px;
+}
+
+.rec60{
+/* Rectangle 60 */
+
+position: absolute;
+width: 136px;
+height: 30px;
+left: 884px;
+top: 488px;
+
+background: #D9D9D9;
+border-radius: 5px;
+}
+
+.rec59{
+/* Rectangle 59 */
+
+position: absolute;
+width: 1315px;
+height: 50px;
+left: 64px;
+top: 410px;
+
+background: #FFF6F6;
+border-radius: 5px;
+z-index: 1;
+}
+
+.rec61{
+/* Rectangle 61 */
+
+position: absolute;
+width: 136px;
+height: 30px;
+left: 737px;
+top: 488px;
+
+background: #D9D9D9;
+border-radius: 5px;
+}
+
+.save{
+/* SAVE CHANGES */
+
+position: absolute;
+width: 136px;
+height: 19px;
+left: 1018px;
+top: 480px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height */
+text-align: right;
+text-transform: uppercase;
+
+color: #000000;
+}
+
+.cancel{
+/* CANCEL ORDER */
+
+position: absolute;
+width: 136px;
+height: 19px;
+left: 870px;
+top: 480px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+text-align: right;
+text-transform: uppercase;
+
+color: #000000;
+}
+
+.print{
+/* PRINT ORDER */
+
+position: absolute;
+width: 136px;
+height: 19px;
+left: 736px;
+top: 480px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+text-align: center;
+text-transform: uppercase;
+
+color: #000000;
+}
+
+.group52{
+/* Group 52 */
+
+position: absolute;
+width: 199px;
+height: 30px;
+left: 1178px;
+top: 488px;
+}
+
+.group53{
+/* Group 53 */
+
+position: absolute;
+width: 199px;
+height: 30px;
+left: 527px;
+top: 488px;
+}
+
+.group26{
+/* Group 26 */
+
+position: absolute;
+width: 1442px;
+height: 107px;
+left: 0px;
+top: 712px;
+}

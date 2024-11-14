@@ -19,9 +19,7 @@ for (let i = 0; i < menu.length; i++) {
       sessionStorage.setItem("isLoggedIn", "false");
       window.location.href = "homePage.html";
     }
-    if (i == 2)
-      window.location.href =
-        "cuoioiioioioi ki/toolbox-quickorder/myaccount.html";
+    if (i == 2) window.location.href = "uhh/Untitled-2.html";
     if (i == 0) window.location.href = "openMenu.html";
   };
 }
