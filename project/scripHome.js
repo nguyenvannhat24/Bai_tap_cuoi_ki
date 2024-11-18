@@ -26,16 +26,19 @@ for (let i = 0; i < menu.length; i++) {
 
 window.onload = function () {
   const isLoggedIn = sessionStorage.getItem("isLoggedIn");
-
-  if (isLoggedIn === "true") {
-    for (let i = 0; i < menu.length; i++) {
-      menu[i].style.display = "none"; // Ẩn phần tử menu
+  try {
+    if (isLoggedIn === "true") {
+      for (let i = 0; i < menu.length; i++) {
+        menu[i].style.display = "none"; // Ẩn phần tử menu
+      }
+      for (let j = 0; j < signin.length; j++) {
+        signin[j].style.fontSize = "12px";
+        signin[j].style.display = "block"; // Hiển thị phần tử signin.
+      }
+      document.getElementById("giohang").style.display = "flex";
     }
-    for (let j = 0; j < signin.length; j++) {
-      signin[j].style.fontSize = "12px";
-      signin[j].style.display = "block"; // Hiển thị phần tử signin.
-    }
-    document.getElementById("giohang").style.display = "flex";
+  } catch {
+    console.log("abcc");
   }
 };
 
@@ -132,4 +135,7 @@ function maskets() {
 // };
 function product() {
   window.location.href = "openMenu.html";
+}
+function Category() {
+  window.location.href = "Category.html";
 }
